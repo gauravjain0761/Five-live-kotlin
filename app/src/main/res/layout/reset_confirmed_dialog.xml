@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <!-- frame layout -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/confirmed_dialog_bg"
+            >
+            
+            <ImageView
+                android:layout_marginVertical="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/confirm"
+                android:layout_gravity="center_horizontal"/>
+
+
+
+            <TextView
+                android:id="@+id/alertTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset Confirmed"
+                android:gravity="center"
+                android:fontFamily="@font/whitney_semibold"
+                android:textStyle="normal"
+                android:textSize="21sp"
+                android:lineSpacingExtra="7sp"
+                android:textColor="@color/dark_black"
+                />
+
+
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/your_password_has_been_updated_successfully"
+                android:fontFamily="@font/whitneybook"
+                android:textStyle="normal"
+                android:textColor="#777777"
+                android:lineSpacingExtra="10sp"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <Button
+                android:id="@+id/okay_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="20dp"
+                android:fontFamily="@font/whitney_semibold"
+                android:textStyle="normal"
+                android:textColor="@color/blue_color"
+                app:backgroundTint="@null"
+                android:background="@drawable/sky_color_bg"
+                android:textSize="18sp"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="6sp"
+                android:text="Okay"
+                android:textAllCaps="false"
+                />
+            
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.EditHappyHoursItemsFragment">
+
+
+    <LinearLayout
+        android:id="@+id/addItemLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/sky_color_bg"
+        android:layout_marginHorizontal="16dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/whitney_semibold"
+            android:textStyle="normal"
+            android:drawableLeft="@drawable/ic_add"
+            android:textSize="13sp"
+            android:drawablePadding="10dp"
+            android:textColor="#0042b9"
+            android:lineSpacingExtra="4sp"
+            android:text="Add Item"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

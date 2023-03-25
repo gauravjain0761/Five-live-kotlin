@@ -1,0 +1,10 @@
+
+Google Play Console Credential:
+
+5liveapplication@gmail.com
+Kingrob#3
+
+jks key credential for generating Singed APK:
+
+Key Password : FiveLive
+Key Alins : FiveLive

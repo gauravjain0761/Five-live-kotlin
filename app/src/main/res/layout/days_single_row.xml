@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/dayNameTextView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Mon"
+        android:gravity="center"
+        android:textColor="#4b5865"
+        android:textSize="14sp"
+        android:fontFamily="@font/whitney_semibold"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="15dp"
+        android:background="@drawable/days_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/editWorkLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/whitneybook"
+        android:hint="Search Locationn"
+        android:inputType="textPersonName"
+        android:lineSpacingExtra="4sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        android:textColor="@color/light_black"
+        android:textCursorDrawable="@null"
+        android:textSize="13sp"
+        android:textStyle="normal"
+         />
+
+</LinearLayout>

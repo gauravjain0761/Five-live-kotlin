@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/businessName_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/whitney_semibold"
+        android:lineSpacingExtra="5sp"
+        android:text=""
+        android:textColor="@color/dark_black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cuisine_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/whitneymedium"
+        android:lineSpacingExtra="4sp"
+        android:text=""
+        android:textColor="@color/light_black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/businessName_tv"
+        app:layout_constraintStart_toStartOf="@+id/businessName_tv"
+        app:layout_constraintTop_toBottomOf="@+id/businessName_tv" />
+
+    <TextView
+        android:id="@+id/address_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/whitneymedium"
+        android:lineSpacingExtra="4sp"
+        android:text=""
+        android:textColor="@color/light_black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/cuisine_tv"
+        app:layout_constraintStart_toStartOf="@+id/cuisine_tv"
+        app:layout_constraintTop_toBottomOf="@+id/cuisine_tv" />
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/address_tv"
+        app:layout_constraintTop_toBottomOf="@+id/address_tv"
+        app:srcCompat="@drawable/yelp" />
+
+
+    <RatingBar
+        android:id="@+id/yelp_rating_bar"
+        style="@style/CustomRatingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/googe_img" />
+
+    <RatingBar
+        android:id="@+id/google_rating_bar"
+        style="@style/CustomRatingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/yelp_rating_bar"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

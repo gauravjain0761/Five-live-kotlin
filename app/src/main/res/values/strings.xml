@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">5 Live</string>
+    <string name="google_map_or_places_id">AIzaSyDVjRNkX_aKX-TJEOrmXL3sRcnbfBBViiM</string>
+    <string name="testing_ad_mob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="production_ad_mob_app_id">ca-app-pub-6782880977876741~8695412312</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="production_interstitial_ad_unit_id">ca-app-pub-6782880977876741/5411887783</string>
+
+    <string name="facebook_app_id">2722670361315657</string>
+    <string name="fb_login_protocol_scheme">fb2722670361315657</string>
+
+    <string name="don_t_have_a_5_live_account_sign_up">Don\'t have a 5 Live Account? <font color='#0042B9'>Sign Up</font></string>
+    <string name="by_continuing_you_agree_to_5_live_s_terms_of_service_and_acknowledge_5_live_s_privacy_policy">By continuing you agree to 5 Live\'s <font color='#0042B9'>Terms of service</font></string>
+    <string name="privacy_policy">and acknowledge 5 Live\'s <font color='#0042B9'>Privacy Policy</font>.</string>
+    <string name="enter_the_email_address_associated_with_your_account">Enter the registered Email ID or Mobile Number associated with your account.</string>
+    <string name="your_password_has_been_updated_successfully">Your Password has been updated \n successfully.</string>
+    <string name="enter_6_digit_one_time_password_verification_code_on_received_on_your_mobile_number">Enter 6 Digits One Time Password verification code received on your mobile number.</string>
+    <string name="enter_6_digit_one_time_password_verification_code_on_received_on_your_email_id">Enter 6 Digits One Time Password verification code received on your registered Email ID.</string>
+    <string name="change_photo"><u>Change Photo</u></string>
+    <string name="paasword_validation_msg"><![CDATA[Password should be between 6 to 15 characters with at least one lowercase letter, one uppercase letter, one numeric digit, and one special character !@#$%^&*()_]]></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="please_add_happy_hour_drinks_food_live_music_happy_hour_menus_company_logos_bartenders_and_establishment_images">Please add happy hour drinks/food, live music, happy hour menus,company logos, bartenders, and establishment images.</string>
+    <string name="reverse_hh_menu">\u0020 Reverse \nHH Menu</string>
+    <string name="reverse_hh_details">\u0020 \u0020 Reverse \nHH Details</string>
+    <string name="reverse_hh_items">\u0020 Reverse \nHH Items</string>
+    <string name="_60_of_all_business_shown">60% of All \nBusiness Shown</string>
+    <string name="no_advertisements">No \nAdvertisements</string>
+    <string name="_100_of_all_business_shown">100% of All \nBusiness Shown</string>
+    <string name="by_continuing_you_agree_todummy_text_5_live_apos_s_terms_of_service">By continuing, you agree to 5 Live\'s <font color='#0042B9'>Terms of Service.</font></string>
+
+
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
+    <string name="rev_hh_menu">Reverse\nHH Menu</string>
+    <string name="rev_hh_menu_new">\u0020 \u0020 \u0020 Rev\nHH Menu</string>
+    <string name="internet_connection_message">Please Check Your Internet Connection.</string>
+    <string name="error">Error!</string>
+    <string name="added_into_fav_msg">Business added into favourite list.</string>
+    <string name="remove_to_fav_msg">Business removed from favourite list.</string>
+    <!--<string name="confirm_password_not_matched">New Password and Confirm Password doesn\'t match.</string>-->
+    <string name="confirm_password_not_matched">Please Make Sure Passwords Match.</string>
+    <string name="save">Save</string>
+    <string name="add_reverse_hh_item">Add Reverse Happy Hour Item</string>
+    <string name="add_hh_item">Add Happy Hour Item</string>
+    <string name="success">Success!</string>
+    <string name="live_music_details">Live Music Details</string>
+    <string name="set_live_music_timing_and_description">Set Live Music Timing and Description</string>
+    <string name="alert">Alert!</string>
+    <string name="update_item">Update Item</string>
+
+    <string name="title_activity_home_search">HomeSearchActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="are_you_sure_you_want_to_call">Are you want to call?</string>
+    <string name="hh_menu">HH Menu</string>
+    <string name="brunch">Brunch</string>
+    <string name="call">Call</string>
+    <string name="website">Website</string>
+    <string name="menu">Menu</string>
+    <string name="info">Info</string>
+    <!--<string name="hh_not_found">There is not Happy Hour or Live Music at this time.</string>-->
+    <string name="hh_not_found">There is No Happy Hour Specials or Live Music at the Present Time.</string>
+    <string name="select_category">Select category.</string>
+    <string name="enter_item_name">Enter Item Name.</string>
+    <string name="select_size">Select Size.</string>
+    <string name="enter_regular_price">Enter regular price.</string>
+    <string name="enter_happy_hour_price">Enter happy hour price.</string>
+    <string name="enter_percentage_off">Enter percentage Off.</string>
+    <string name="please_select_item_image">Please select Item Image.</string>
+    <string name="enter_business_name">Enter Business Name.</string>
+    <string name="enter_zip_code">Enter Zip Code.</string>
+    <string name="enter_city_name">Enter City Name.</string>
+    <string name="enter_state_name">Enter State Name.</string>
+    <string name="enter_country_name">Enter Country Name.</string>
+    <string name="enter_phone_number">Enter Phone Number.</string>
+    <string name="enter_email_address">Enter Email address.</string>
+    <string name="enter_website_link">Enter website Link.</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="no_results_for_restaurant_nearby_current_location"> <font color='#22232a'>No Result for Filter or Business </font> \n <font color='#4b5865'>Near Selected Location.</font></string>
+    <string name="are_you_sure_you_want_to_logout_from_the_app">Are you sure you want to logout.</string>
+    <string name="please_check_your_emial_address_to_get_the_otp">Please check your email address to get the OTP.</string>
+    <string name="number_verification">Number Verification</string>
+    <string name="email_verification">Email Verification</string>
+
+    <string-array name="days_array">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+    <string-array name="full_day_name_array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+
+    <string-array name="category_array">
+        <item>Drinks</item>
+        <item>Food</item>
+    </string-array>
+
+    <string-array name="size_array">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="home_cat_array">
+        <item>Now</item>
+        <item>Brunch</item>
+        <item>Food</item>
+        <item>Live Music</item>
+    </string-array>
+
+</resources>

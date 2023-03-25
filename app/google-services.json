@@ -1,0 +1,95 @@
+{
+  "project_info": {
+    "project_number": "409444025198",
+    "project_id": "live-734cf",
+    "storage_bucket": "live-734cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409444025198:android:a207a9630d1c36dc94777f",
+        "android_client_info": {
+          "package_name": "com.fivelive.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409444025198-0sahub82p9crsfq65647018egdcho43f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fivelive.app",
+            "certificate_hash": "fe291abb644bc8c4fc9b5ecd710f8e6a7f8fafa0"
+          }
+        },
+        {
+          "client_id": "409444025198-4kbt0f58or39dmv8hjm12g528tn6lnv8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fivelive.app",
+            "certificate_hash": "e92db1ee6cc05cbb74549edd2bfcae617883da42"
+          }
+        },
+        {
+          "client_id": "409444025198-90h3bl9q1to9u0e6c0qdnjrma28hjecm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fivelive.app",
+            "certificate_hash": "02934b8f635dd9f690c5ec59f1191320e8f4f223"
+          }
+        },
+        {
+          "client_id": "409444025198-m0pnh9euomem17jkjpr80fvgf1dunnfk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fivelive.app",
+            "certificate_hash": "3d1311f3c5c77b68d38141f9ceb05e49403cb6e2"
+          }
+        },
+        {
+          "client_id": "409444025198-ne0eub2f9kjpnds13lja7a6ngp283d3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fivelive.app",
+            "certificate_hash": "12e03193dc85ec0706153a85253b37a6e1f9572c"
+          }
+        },
+        {
+          "client_id": "409444025198-to3nt474qq3da6pr6s8chqmv9pg1na4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fivelive.app",
+            "certificate_hash": "1c7f6104dbf14b281c5d69eef42ba7f12a538d9b"
+          }
+        },
+        {
+          "client_id": "409444025198-abq9l70c7shon4ein3eo62jgr4c7ihoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKpD3FwxumUIkiydx1__C9lGaiyDVJZ9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409444025198-abq9l70c7shon4ein3eo62jgr4c7ihoi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "409444025198-d3vqvlj083ls5nv97i23lkfgm89tdgt6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.5Live.app",
+                "app_store_id": "1559355406"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

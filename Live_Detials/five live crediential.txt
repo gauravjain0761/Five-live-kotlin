@@ -1,0 +1,48 @@
+5liveapplication@gmail.com
+
+Kingrob#3
+
+
+fivelive.page.link has been verified and approved for use
+
+
+
+Next, place the ad unit inside your app
+Follow these instructions:
+Complete the instructions in the Google Mobile Ads SDK guide using this app ID:
+5Liveca-app-pub-6782880977876741~8695412312
+Follow the native advanced implementation guide to integrate the SDK. You'll specify ad type, size, and placement when you integrate the code using this ad unit ID:
+native_adsca-app-pub-6782880977876741/6138365882
+Review the AdMob policies to ensure your implementation complies.
+
+
+
+
+Follow these instructions:
+Complete the instructions in the Google Mobile Ads SDK guide using this app ID:
+5Live
+ca-app-pub-6782880977876741~8695412312
+Follow the interstitial implementation guide to integrate the SDK. You'll specify ad type and placement when you integrate the code using this ad unit ID:
+5Live_interstitial_ad
+ca-app-pub-6782880977876741/5411887783
+Review the AdMob policies to ensure your implementation complies.
+
+
+
+
+
+Hi 5liveapplication@gmail.com,
+Thanks for verifying your email address.
+Get started by forecasting a venue through the front-end tool:
+https://besttime.app/api/v1/forecast
+or with the API using the following API keys below:
+Private API key: pri_4e365d108f124b3a92d04e8d670b787d
+Public API key: pub_c04b44bf62bd42c8ba5a52c3e892ca17
+Use the private API key to forecast new venues, and the public API key to query already forecasted venues.
+Check the documentation for more information:
+https://documentation.besttime.app/#forecasts-endpoints
+
+
+
+
+Purchase. Json: {"orderId":"GPA.3306-3237-5691-84483","packageName":"com.fivelive.app","productId":"5live_3months","purchaseTime":1618577323285,"purchaseState":0,"purchaseToken":"ecfainogmjlgmljgmjolcflo.AO-J1OwLmaZavK_ZeyOdG2hWKmGzYZTclOpQLERY8fAks5QSTKs7Gly8xfmAhURf6qGIrdVIKR3LRf6emFfThBICYaDaBOq6VQ","autoRenewing":true,"acknowledged":false}

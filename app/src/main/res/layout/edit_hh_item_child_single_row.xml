@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/percentage_off_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/banner"
+                android:fontFamily="@font/whitneybook"
+                android:gravity="center_horizontal|center_vertical"
+                android:lineSpacingExtra="3sp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="50% Off"
+                android:textColor="#ffffff"
+                android:textSize="8sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/item_imv"
+                android:layout_width="103dp"
+                android:layout_height="95dp"
+                android:scaleType="fitXY"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/menu_img" />
+
+            <TextView
+                android:id="@+id/item_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/whitneybook"
+                android:lineSpacingExtra="11sp"
+                android:text="Virgin Mojito"
+                android:textColor="@color/dark_black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/item_imv"
+                app:layout_constraintTop_toTopOf="@+id/item_imv" />
+
+            <TextView
+                android:id="@+id/item_size_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/whitneybook"
+                android:lineSpacingExtra="4sp"
+                android:text="Medium Size"
+                android:textColor="#777777"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/item_name_tv"
+                app:layout_constraintTop_toBottomOf="@+id/item_name_tv" />
+
+            <TextView
+                android:id="@+id/item_offer_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/whitneybook"
+                android:lineSpacingExtra="4sp"
+                android:text="$10"
+                android:textColor="#0042b9"
+                android:textSize="13sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/item_size_tv"
+                app:layout_constraintTop_toBottomOf="@+id/item_size_tv" />
+
+            <TextView
+                android:id="@+id/item_regular_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/strike_through"
+                android:fontFamily="@font/whitneybook"
+                android:lineSpacingExtra="4sp"
+                android:text="$20"
+                android:textColor="#777777"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/item_offer_price_tv"
+                app:layout_constraintStart_toEndOf="@+id/item_offer_price_tv"
+                app:layout_constraintTop_toTopOf="@+id/item_offer_price_tv" />
+
+            <ImageView
+                android:id="@+id/edit_imv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/edit" />
+
+            <ImageView
+                android:id="@+id/delete_imv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/edit_imv"
+                app:srcCompat="@drawable/delete_a" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

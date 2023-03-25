@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".app.FiveLiveApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/circle_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FiveLive"
+        android:usesCleartextTraffic="true">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+       <!-- <activity android:name=".activity.InAppPurchesActivity"></activity>-->
+        <activity android:name=".activity.ContactUsActivity" /> <!-- <activity android:name=".activity.ProgressBar"></activity> -->
+        <activity android:name=".activity.ShowImagesActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.AddLiveMusicDetailsActivity" />
+        <activity android:name=".activity.AddHappyHourDetailsActivity" />
+        <activity android:name=".activity.SetLiveMusicActivity" />
+        <activity android:name=".activity.TakeImage" /> <!-- <activity android:name=".activity.FirebasePhoneNumberAuthentication"></activity> -->
+        <activity android:name=".activity.PreviewImageActivity" />
+        <activity android:name=".activity.DummyMapActivity" />
+        <activity android:name=".activity.AddNewAddressActivity" />
+        <activity android:name=".activity.MySavedAddressActivity" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.SetRegularMenuDetailsActivity" />
+        <activity android:name=".activity.SetBrunchActivity" />
+        <activity android:name=".activity.PrivacyPolicyActivity" />
+        <activity android:name=".activity.TermAndConditionActivity" />
+        <activity android:name=".activity.FaqsActivity" />
+        <activity android:name=".activity.AboutusActivity" />
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.SubscriptionActivity" />
+        <activity android:name=".activity.amenities.controller.AmenitiesActivity" />
+        <activity android:name=".activity.regularMenu.controller.RegularMenuActivity" />
+        <activity android:name=".activity.brunchMenu.controller.BrunchMenuActivity" />
+        <activity android:name=".activity.happyHoursMenu.controller.HappyHourActivity" />
+        <activity android:name=".activity.reverseHhMenu.controller.ReverseHHMenuActivity" /> <!-- <activity android:name=".activity.CategoryActivity"></activity> -->
+        <activity android:name=".activity.AddHappyHoursImageActivity" />
+        <activity android:name=".activity.AddHappyHoursItemActivity" />
+        <activity android:name=".activity.ChangePasswordActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.ClaimBusinessActivity" />
+        <activity android:name=".activity.SetHappyHourActivity" />
+        <activity android:name=".activity.SetReverseHappyHourActivity" />
+        <activity android:name=".activity.SavedAddressActivity" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.ForgotPasswordActivity" />
+        <activity android:name=".activity.ResetPasswordActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.NumberVerificationActivity" />
+        <activity
+            android:name=".activity.DetailsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.EditBusinessActivity" />
+        <activity android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Deep linking intent filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="fivelive.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <!--
+            The API key for Google Maps-based APIs is defined as a string resource.
+            (See the file "res/values/google_maps_api.xml").
+            Note that the API key is linked to the encryption key used to sign the APK.
+            You need a different API key for each encryption key, including the release key that is used to
+            sign the APK for publishing.
+            You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.fivelive.app"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider> <!-- Firebase puch notification service -->
+        <service
+            android:name=".notification.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- Addmob meta data -->
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/production_ad_mob_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- facebook meta data -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

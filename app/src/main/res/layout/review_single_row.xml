@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#f2f3f6">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_imv"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/profile_other"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/whitneybook"
+        android:lineSpacingExtra="4sp"
+        android:text="David"
+        android:textColor="@color/dark_black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/user_imv"
+        app:layout_constraintTop_toTopOf="@+id/user_imv" />
+
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/whitneybook"
+        android:lineSpacingExtra="4sp"
+        android:text="date"
+        android:textColor="@color/dark_black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/user_imv" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="@style/CustomRatingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="4.0"
+        app:layout_constraintStart_toStartOf="@+id/user_name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/user_name_tv" />
+
+    <TextView
+        android:id="@+id/review_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/whitneybook"
+        android:lineSpacingExtra="4sp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla sit amet velit posuere."
+        android:textColor="@color/dark_black"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/imv_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rating_bar"
+        app:layout_constraintTop_toBottomOf="@+id/rating_bar"
+        app:layout_goneMarginBottom="10dp" />
+
+    <ImageView
+        android:id="@+id/imv_one"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/review_tv"
+        app:layout_constraintTop_toBottomOf="@+id/review_tv"
+        app:layout_goneMarginTop="8dp"
+        app:srcCompat="@drawable/rest_slider" />
+
+    <ImageView
+        android:id="@+id/imv_two"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/imv_one"
+        app:layout_constraintStart_toEndOf="@+id/imv_one"
+        app:layout_constraintTop_toTopOf="@+id/imv_one"
+        app:srcCompat="@drawable/rest_slider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

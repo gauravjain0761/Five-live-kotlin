@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".activity.AddHappyHoursItemActivity">
+
+    <include
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/whitney_semibold"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="7sp"
+                android:text="Add Happy Hour Item"
+                android:textColor="@color/dark_black"
+                android:textSize="19sp" />
+
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray_color"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upload" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/whitney_semibold"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:text="Upload Image"
+                    android:textColor="#4b5865"
+                    android:textSize="13sp" />
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/uploadImageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/dotted_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/whitney_semibold"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="4sp"
+                        android:text="Upload Image"
+                        android:textColor="#4b5865"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/imageConstraintLayout"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:context=".fragment.HomeFragment">
+
+
+                <com.fivelive.app.customView.RoundCornerImageView
+                    android:id="@+id/coverImageView"
+                    android:layout_width="154dp"
+                    android:layout_height="142dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/img_ee"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/clear_imv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_clear"
+                    app:layout_constraintBottom_toTopOf="@+id/coverImageView"
+                    app:layout_constraintEnd_toEndOf="@+id/coverImageView"
+                    app:layout_constraintStart_toEndOf="@+id/coverImageView"
+                    app:layout_constraintTop_toTopOf="@+id/coverImageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/categoryTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/whitneybook"
+                android:hint="Category"
+                android:lineSpacingExtra="5sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/dark_gray_color"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:endIconDrawable="@drawable/ddown">
+
+                <AutoCompleteTextView
+                    android:id="@+id/selectCat_actv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:fontFamily="@font/whitneymedium"
+                    android:lineSpacingExtra="6sp"
+                    android:padding="10dp"
+                    android:textColor="#4b5865"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    tools:text="Select Category" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/itemTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/whitneybook"
+                android:hint="Item"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/dark_gray_color"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/item_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/whitneymedium"
+                    android:lineSpacingExtra="6sp"
+                    android:textColor="#4b5865"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sizeTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/whitneybook"
+                android:hint="Size"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/dark_gray_color"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:layout_marginTop="20dp"
+                app:endIconDrawable="@drawable/ddown">
+
+                <AutoCompleteTextView
+                    android:id="@+id/selectSize_actv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:fontFamily="@font/whitneymedium"
+                    android:lineSpacingExtra="6sp"
+                    android:padding="10dp"
+                    android:textColor="#4b5865"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    tools:text="Select Size" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rgpTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/whitneybook"
+                android:hint="Regular Price"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/dark_gray_color"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/regular_price_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/whitneymedium"
+                    android:lineSpacingExtra="6sp"
+                    android:textColor="#4b5865"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:inputType="numberDecimal"
+                    android:textStyle="normal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/hhpTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/whitneybook"
+                android:hint="Happy Hour Price"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/dark_gray_color"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/happy_hours_price_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/whitneymedium"
+                    android:lineSpacingExtra="6sp"
+                    android:textColor="#4b5865"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:inputType="numberDecimal"
+                    android:textStyle="normal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/perOfTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/whitneybook"
+                android:hint="Percentage Off"
+                android:lineSpacingExtra="5sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/dark_gray_color"
+                android:textSize="16sp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/percentage_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/whitneymedium"
+                    android:lineSpacingExtra="6sp"
+                    android:textColor="#4b5865"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:textStyle="normal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/blue_btn_bg"
+                    android:fontFamily="@font/whitney_semibold"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="6sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    tools:text="Add Item" />
+
+            </LinearLayout>-->
+
+
+            <Button
+                android:id="@+id/addItemBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blue_btn_bg"
+                android:fontFamily="@font/whitney_semibold"
+                android:letterSpacing="-0.01"
+                android:lineSpacingExtra="6sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="Add Item" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

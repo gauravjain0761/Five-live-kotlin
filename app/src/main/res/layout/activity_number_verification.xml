@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NumberVerificationActivity">
+
+    <include
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/whitney_semibold"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/number_verification"
+                android:textColor="@color/dark_black"
+                android:textSize="32sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/message_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:fontFamily="@font/whitneybook"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/enter_6_digit_one_time_password_verification_code_on_received_on_your_mobile_number"
+                android:textColor="@color/light_black"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/otpTIL"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/whitneybook"
+                android:hint="Enter One Time Password"
+                android:lineSpacingExtra="5sp"
+                android:textColor="@color/dark_gray_color"
+                android:textSize="16sp"
+                android:textStyle="normal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/otp_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:fontFamily="@font/whitneymedium"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:textColor="#4b5865"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/timerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:fontFamily="@font/whitneymedium"
+                android:textAllCaps="false"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="5sp"
+                android:text="01:00"
+                android:textColor="@color/blue_color"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/resendButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:fontFamily="@font/whitneymedium"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textAllCaps="false"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="5sp"
+                android:text="Resend One Time Password"
+                android:textColor="@color/blue_color"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/verifyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/blue_btn_bg"
+                android:fontFamily="@font/whitney_semibold"
+                android:letterSpacing="-0.01"
+                android:text="Verify"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/closeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/light_gray_color"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/whitney_semibold"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:textColor="#777777"
+            android:lineSpacingExtra="4sp"
+            android:text="Monday :"
+            android:drawableLeft="@drawable/hh"
+            android:drawablePadding="20dp"
+            />
+
+
+        <TextView
+            android:paddingVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/whitney_semibold"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:textColor="@color/dark_black"
+            android:lineSpacingExtra="4sp"
+            android:text="Closed"
+            android:drawablePadding="20dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/parentLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_gray_color"
+        android:animateLayoutChanges="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/dayName_tv"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/whitney_semibold"
+                android:textStyle="normal"
+                android:textSize="10sp"
+                android:textColor="#777777"
+                android:lineSpacingExtra="4sp"
+                android:text="Monday :"
+                android:drawableLeft="@drawable/hh"
+                android:drawablePadding="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/start_end_time_tv"
+                android:paddingVertical="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/whitney_semibold"
+                android:textStyle="normal"
+                android:textSize="10sp"
+                android:textColor="@color/dark_black"
+                android:lineSpacingExtra="4sp"
+                android:text="5:00 PM - 7:00 PM"
+                android:drawablePadding="20dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/gray_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:srcCompat="@drawable/drink" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="144dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/whitney_semibold"
+                android:lineSpacingExtra="4sp"
+                android:text="Drinks"
+                android:textColor="@color/blue_color"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView22"
+                app:layout_constraintStart_toEndOf="@+id/imageView22"
+                app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+            <TextView
+                android:id="@+id/drinks_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/whitneybook"
+                android:lineSpacingExtra="4sp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s"
+                android:textColor="#22232a"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView50"
+                app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/drinks_tv"
+                app:srcCompat="@drawable/foood_aa" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/whitney_semibold"
+                android:text="Food"
+                android:textColor="@color/blue_color"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView23"
+                app:layout_constraintStart_toEndOf="@+id/imageView23"
+                app:layout_constraintTop_toTopOf="@+id/imageView23"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/food_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/whitneybook"
+                android:lineSpacingExtra="4sp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and type setting industry."
+                android:textColor="@color/dark_black"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView52"
+                app:layout_constraintTop_toBottomOf="@+id/textView52" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

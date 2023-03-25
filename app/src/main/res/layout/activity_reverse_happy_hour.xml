@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".activity.SetReverseHappyHourActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/whitney_semibold"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:textColor="@color/dark_black"
+        android:lineSpacingExtra="6sp"
+        android:text="Set Reverse Happy Hour Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/reverseHHMenuTextView"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <TextView
+        android:id="@+id/reverseHHMenuTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:background="@drawable/blue_btn_bg"
+        android:fontFamily="@font/whitneybook"
+        android:lineSpacingExtra="5sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="@string/reverse_hh_menu"
+        android:textColor="#fafafa"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/reverseHHDetailsTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/reverseHHDetailsTextView"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/whitneybook"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="@color/light_black"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/reverse_hh_details"
+        app:layout_constraintEnd_toStartOf="@+id/reverseHHItemsTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/reverseHHMenuTextView"
+        app:layout_constraintTop_toTopOf="@+id/reverseHHMenuTextView"
+        android:background="@drawable/un_selected_hh_details_bg"/>
+
+    <TextView
+        android:id="@+id/reverseHHItemsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/un_selected_hh_details_bg"
+        android:fontFamily="@font/whitneybook"
+        android:lineSpacingExtra="5sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="@string/reverse_hh_items"
+        android:textColor="@color/light_black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/reverseHHDetailsTextView"
+        app:layout_constraintTop_toTopOf="@+id/reverseHHDetailsTextView" />
+
+    <FrameLayout
+        android:id="@+id/reverse_happy_hour_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reverseHHMenuTextView">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

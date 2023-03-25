@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imagesRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/recipes_images_single_row"/>
+
+    <TextView
+        android:id="@+id/businessName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/whitney_semibold"
+        android:lineSpacingExtra="5sp"
+        android:text="1. Hibchi Buffer And Grill"
+        android:textColor="@color/dark_black"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagesRecyclerView" />
+
+
+    <TextView
+        android:id="@+id/milesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/days_bg"
+        android:backgroundTint="#DCE4F3"
+        android:drawableRight="@drawable/navi"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/whitneymedium"
+        android:padding="5dp"
+        android:text="0.4 Miles"
+        app:layout_constraintBottom_toBottomOf="@+id/saveImageView"
+        app:layout_constraintEnd_toStartOf="@+id/saveImageView"
+        app:layout_constraintTop_toTopOf="@+id/saveImageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/businessName_tv"
+        app:layout_constraintTop_toBottomOf="@+id/businessName_tv"
+        app:srcCompat="@drawable/googe_img" />
+
+    <RatingBar
+        android:id="@+id/google_rating_bar"
+        style="@style/CustomRatingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3.0"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/saveImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/save" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#F2F3F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/google_rating_bar">
+
+        <TextView
+            android:id="@+id/tvDollar"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/whitney_semibold"
+            android:textColor="#777777"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/hh_today_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:drawableLeft="@drawable/hh"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/whitney_semibold"
+            android:lineSpacingExtra="4sp"
+            android:text="Happy Hours Today : 5:00PM - 7:00PM"
+            android:textColor="#777777"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/details_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/hh_today_tv"
+            app:layout_constraintStart_toStartOf="@+id/hh_today_tv"
+            app:layout_constraintBottom_toTopOf="@+id/lm_today_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.16000003">
+
+
+            <TextView
+                android:id="@+id/drink_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:drawableLeft="@drawable/drink"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/whitney_semibold"
+                android:gravity="center"
+                android:lineSpacingExtra="4sp"
+                android:text="Drinks"
+                android:textColor="@color/blue_color"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/drinks_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/whitneymedium"
+                android:lineSpacingExtra="4sp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s"
+                android:textColor="#22232a"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/drink_tv"
+                app:layout_constraintTop_toBottomOf="@+id/drink_tv"
+                app:layout_constraintBottom_toTopOf="@+id/food_tvs"
+                />
+
+            <TextView
+                android:id="@+id/food_tvs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@drawable/foood_aa"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/whitney_semibold"
+                android:gravity="center"
+                android:lineSpacingExtra="4sp"
+                android:text="Food"
+                android:textColor="@color/blue_color"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/food_tv"
+                app:layout_constraintVertical_bias="0.0"
+                />
+
+
+            <TextView
+                android:id="@+id/food_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/whitneymedium"
+                android:lineSpacingExtra="4sp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s"
+                android:textColor="#22232a"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/details_constraint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/food_tvs"
+                 />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/lm_today_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/music"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/whitney_semibold"
+            android:lineSpacingExtra="4sp"
+            android:text="Live Music Today : 5:00PM - 7:00PM"
+            android:textColor="#777777"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="@+id/details_constraint"
+            app:layout_constraintTop_toBottomOf="@+id/details_constraint"
+            app:layout_goneMarginTop="10dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/line_seprator_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
